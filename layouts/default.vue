@@ -4,7 +4,7 @@
       <div class="flex items-center space-x-12">
         <div>
         <nuxt-link to="/"
-                   class="text-xl font-semibold p-2 hover:bg-gray-200">Alex Firulin</nuxt-link>
+                   class="text-xl font-semibold p-2 hover:bg-gray-200 dark:hover:bg-gray-800">Alex Firulin</nuxt-link>
       </div>
       <the-menue />
       </div>

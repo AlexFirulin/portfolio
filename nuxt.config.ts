@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  app: {
+    pageTransition: {name: 'page' , mode: 'out-in'}
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
@@ -13,9 +16,6 @@ export default defineNuxtConfig({
         dark: 'min-dark'
       }
     }
-  },
-  app: {
-    pageTransition: {name: 'page' , mode: 'out-in'}
   },
   colorMode: {
     classSuffix: ''
