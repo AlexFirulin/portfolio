@@ -1,53 +1,35 @@
 <template>
-  <input
-    type="checkbox"
-    :checked="colorMode.preference === 'dark'"
-    @change="toggleMode"
-    class="form-toggle"
-  />
+  <div class="flex space-x-2 items-center">
+    <div class="text-gray-500 text-xs" v-if="showNextModelLabel">Change to {{ nextMode }}</div>
+    <button @click="toggleMode" @mouseenter="showNextModelLabel = true" @mouseleave="showNextModelLabel = false"
+      class="hover:bg-gray-200 dark:hover:bg-gray-600 px-2 py-1 text-gray-500">{{ nextModeIcon
+      }}</button>
+  </div>
 </template>
 
 <script setup>
-
+const showNextModelLabel = ref(false)
 const colorMode = useColorMode()
-
-const toggleMode = () => {
-  colorMode.preference = colorMode.preference === 'light' ? 'dark' : 'light'
+const modes = [
+  'system',
+  'light',
+  'dark'
+]
+const nextModeIcons = {
+  system: '🌓',
+  light: '🌕',
+  dark: '🌑'
 }
+const nextMode = computed(() => {
+  const currentModeIndex = modes.indexOf(colorMode.preference)
+  let nextModeIndex = null
+  if (currentModeIndex + 1 === modes.length) {
+    nextModeIndex = 0
+  } else {
+    nextModeIndex = currentModeIndex + 1
+  }
+  return modes[nextModeIndex]
+})
+const nextModeIcon = computed(() => nextModeIcons[nextMode.value])
+const toggleMode = () => colorMode.preference = nextMode.value
 </script>
-
-<style scoped>
-.form-toggle {
-  position: relative;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 40px;
-  height: 20px;
-  background: #ccc;
-  outline: none;
-  border-radius: 20px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s;
-  cursor: pointer;
-}
-
-.form-toggle:checked {
-  background: #0c190c;
-}
-
-.form-toggle::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: rgb(27, 89, 127);
-  border-radius: 50%;
-  transition: transform 0.3s;
-}
-
-.form-toggle:checked::before {
-  transform: translateX(100%);
-}
-</style>

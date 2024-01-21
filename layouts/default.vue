@@ -8,7 +8,10 @@
       </div>
       <the-menue />
       </div>
-      <the-color-mode-celector></the-color-mode-celector>
+      <client-only>
+        <the-color-mode-celector></the-color-mode-celector>
+      </client-only>
+
     </header>
     <main class="mt-10">
       <slot />
