@@ -1,29 +1,21 @@
 ---
-description: 'meta description of the page'
+description: 'About me'
 ---
 # Hello There, I'm Alex
 
 ## About me
 
-I'm Alex, I'm a developer and a Udemy Instructor. I'm 36, living in southern Poland with my wife and 2  golden retrievers. I'm vegan and pro-animal 🥑.
+Highly motivated and skilled Vue.js developer with a strong passion for creating dynamic and user-friendly web applications. With a background in front-end development and proficiency in HTML, CSS, JavaScript and Vue.js.
 
-## What I teach on Udemy
+ 
 
-I teach mostly web development and I have courses on:
+ My work experience
 
-- Laravel (PHP framework)
-- Laravel & Vue & Inertia (PHP framework/JavaScript frontend framework)
-- Symfony (PHP framework)
-- NestJS (Node.js framework)
-- Nuxt 3 (JavaScript Full-stack framework)
+- Amendadvice.com (PWA build on Vue.js and Firebase)
+- Hedlyner.com (Platform build on Vue.js and Laravel)
+- Zoho(deluge) develoepr
 
-## What software/hardware do I use?
+ My start
 
-Here's a list of everyday used software and hardware:
-
-- MacBook Pro 16 2021
-- Rode NT USB microphone
-- VSCode
-- Chrome
-- ScreenFlow (Mac only)
-- Docker
+- Intership in Mageap company as frontend developer
+- Intership in EPAM

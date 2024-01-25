@@ -10,6 +10,9 @@
       <li>
         <NuxtLink to="/projects" class="link">Projects</NuxtLink>
       </li>
+      <li>
+        <NuxtLink to="/jokes" class="link">Jokes</NuxtLink>
+      </li>
     </ul>
   </nav>
 </template>
