@@ -5,7 +5,7 @@
         <NuxtLink to="/" class="link">Home</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/about" class="link">About</NuxtLink>
+        <NuxtLink to="/about" class="link ">About</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/projects" class="link">Projects</NuxtLink>
@@ -21,4 +21,5 @@
 .link {
   @apply p-1 hover:bg-gray-200 dark:hover:bg-gray-800 text-2xl md:text-base
 }
+
 </style>

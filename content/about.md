@@ -1,13 +1,13 @@
 ---
 description: 'About me'
 ---
-# Hello There, I'm Alex
+# Hello There, I'm Alex Firulin
 
 ## About me
 
 Highly motivated and skilled Vue.js developer with a strong passion for creating dynamic and user-friendly web applications. With a background in front-end development and proficiency in HTML, CSS, JavaScript and Vue.js.
 
- 
+
 
  My work experience
 
